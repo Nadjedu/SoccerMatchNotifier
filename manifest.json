@@ -1,0 +1,19 @@
+{
+    "name": "Soccer Match Notifier",
+    "version": "1.0",
+    "description": "Displays notifications about soccer matches of interest",
+    "short_name": "SC Notifier",
+    "options_page": "./src/options.html",
+    "permissions": ["notifications", "storage"],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "browser_action": {
+        "default_icon":{
+
+        },
+        "default_title": "WC Notifier"
+    },
+    "background":{
+        "scripts": ["./src/background.js", "./src/options.js"]
+    },
+    "manifest_version": 2
+}
